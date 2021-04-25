@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import logo from "../../assets/admin-logo.png";
 
 const NavBtn = styled(Link)`
   width: 8rem;
@@ -16,8 +17,14 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Admin Logo
-            </Link>
+            <img
+              className="navbar-brand img-fluid"
+              src={logo}
+              alt=""
+              width="40"
+              height="40"
+            />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -49,17 +56,13 @@ const Navbar = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <path
-                        stroke="none"
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      ></path>
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <circle cx="12" cy="12" r="9"></circle>
                       <line x1="9" y1="12" x2="15" y2="12"></line>
                       <line x1="12" y1="9" x2="12" y2="15"></line>
                     </svg>
-                      Add stock
-                    </button>
+                    Add stock
+                  </button>
                 </NavBtn>
               </li>
               <li className="nav-item">
@@ -77,11 +80,7 @@ const Navbar = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <path
-                        stroke="none"
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      ></path>
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <line x1="9" y1="6" x2="20" y2="6"></line>
                       <line x1="9" y1="12" x2="20" y2="12"></line>
                       <line x1="9" y1="18" x2="20" y2="18"></line>
@@ -89,8 +88,8 @@ const Navbar = () => {
                       <line x1="5" y1="12" x2="5" y2="12.01"></line>
                       <line x1="5" y1="18" x2="5" y2="18.01"></line>
                     </svg>
-                      List Stocks
-                    </button>
+                    List Stocks
+                  </button>
                 </NavBtn>
               </li>
               <li className="nav-item">
@@ -108,11 +107,7 @@ const Navbar = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <path
-                        stroke="none"
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      ></path>
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <line x1="9" y1="6" x2="20" y2="6"></line>
                       <line x1="9" y1="12" x2="20" y2="12"></line>
                       <line x1="9" y1="18" x2="20" y2="18"></line>
@@ -120,8 +115,8 @@ const Navbar = () => {
                       <line x1="5" y1="12" x2="5" y2="12.01"></line>
                       <line x1="5" y1="18" x2="5" y2="18.01"></line>
                     </svg>
-                      List Posts
-                    </button>
+                    List Posts
+                  </button>
                 </NavBtn>
               </li>
               <li className="nav-item">
@@ -139,18 +134,14 @@ const Navbar = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <path
-                        stroke="none"
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      ></path>
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <circle cx="9" cy="7" r="4"></circle>
                       <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
                       <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                       <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
                     </svg>
-                      List Users
-                    </button>
+                    List Users
+                  </button>
                 </NavBtn>
               </li>
             </NavUl>
