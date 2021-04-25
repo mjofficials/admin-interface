@@ -14,7 +14,7 @@ const StockFormBody = styled.div`
 const AddStocksPage = () => {
   return (
     <div>
-      <div className="text-center p-3">
+      <div className="p-3">
         <h1>Add Stocks Page</h1>
       </div>
       {/* Cards with tabs component */}

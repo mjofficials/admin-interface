@@ -1,5 +1,5 @@
 import React from "react";
-import PipelineTable from "./PipelineTable/PipelineTable";
+import PipelineTable from './PipelineTable/PipelineTable'
 
 const Pipeline = () => {
   return (

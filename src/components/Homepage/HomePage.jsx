@@ -8,11 +8,20 @@ const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+const StyledH1 = styled.h1`
+  width: 75%;
+  position: relative;
+  top: 25%;
+  text-align: center;
+`;
 
 const HomePage = () => {
   return (
     <StyledDiv>
-      <h1>Homepage</h1>
+      <StyledH1>
+        Welcome to the Adimn Interface Homepage, where you can add-stocks,
+        list-stocks, list-posts and list-users
+      </StyledH1>
     </StyledDiv>
   );
 };

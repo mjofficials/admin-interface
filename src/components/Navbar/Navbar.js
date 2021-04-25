@@ -30,7 +30,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse container navbar-collapse"
+            className="collapse container navbar-collapse justify-content-end"
             id="navbarNavDropdown"
           >
             <NavUl className="navbar-nav">

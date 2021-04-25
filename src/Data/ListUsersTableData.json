@@ -1,0 +1,37 @@
+{
+  "listuserstabledata": [
+    {
+      "id": 0,
+      "email_address": "test@test.com",
+      "username": "TraderJoe88",
+      "posts": 2213,
+      "posts(1M)": 92,
+      "logins": 12,
+      "member_since": "2020-03-19 20.33",
+      "last_active": "2020-03-19 20.33",
+      "action": "no"
+    },
+    {
+      "id": 1,
+      "email_address": "test@test.com",
+      "username": "TraderJoe88",
+      "posts": 2213,
+      "posts(1M)": 92,
+      "logins": 12,
+      "member_since": "2020-03-19 20.33",
+      "last_active": "2020-03-19 20.33",
+      "action": "live"
+    },
+    {
+      "id": 2,
+      "email_address": "test@test.com",
+      "username": "TraderJoe88",
+      "posts": 2213,
+      "posts(1M)": 92,
+      "logins": 12,
+      "member_since": "2020-03-19 20.33",
+      "last_active": "2020-03-19 20.33",
+      "action": "live"
+    }
+  ]
+}

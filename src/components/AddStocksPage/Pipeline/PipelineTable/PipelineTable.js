@@ -1,57 +1,54 @@
 import React from "react";
-import PipelineTableRow from "./PipelineTableRow";
-import styled from "styled-components";
-import PipelineTableStage from "./PipelineTableStage";
-import PipelineTableStageData from "./PipelineTableStageData";
+import DynamicInput from "../PipelineInput/PipelineInput";
+import DynamicSelect from "../PipelineSelect/PipelineSelect";
 
-const PipelineTableRowDiv = styled.div`
-  width: 100%;
-  position: relative;
-  left: 1%;
-`;
-
-const PipelineTable = () => {
+const UpdateBtn = ({ btnName }) => {
   return (
-    <PipelineTableRowDiv className="d-flex row align-items-start justify-content-between">
-      {/* Name Table */}
-      <table className="col col-lg-2 table-primary">
+    <button type="button" className="btn btn-green d-block mb-3">
+      {btnName}
+    </button>
+  );
+};
+const DeleteBtn = ({ btnName }) => {
+  return (
+    <button type="button" className="btn btn-danger d-block mb-3">
+      {btnName}
+    </button>
+  );
+};
+const PipelineTable = () => {
+  let inputLength = 5;
+  let inputFields = [];
+  let selectFields = [];
+  let updateBtn = [];
+  let deleteBtn = [];
+  for (let i = 0; i < inputLength; i++) {
+    inputFields.push(<DynamicInput id={i} key={i} />);
+    selectFields.push(<DynamicSelect id={i} key={i} />);
+    updateBtn.push(<UpdateBtn btnName="Update" id={i} key={i} />);
+    deleteBtn.push(<DeleteBtn btnName="Delete" id={i} key={i} />);
+  }
+  return (
+    <div className="table-responsive">
+      <table className="table table-borderless">
         <thead>
           <tr>
             <th scope="col">Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <PipelineTableRow />
-          <PipelineTableRow />
-          <PipelineTableRow />
-          <PipelineTableRow />
-          <PipelineTableRow />
-        </tbody>
-      </table>
-      {/* Diseases Table */}
-      <table className="col col-lg-4 table-primary">
-        <thead>
-          <tr>
             <th scope="col">Disease</th>
+            <th scope="col">Stage</th>
           </tr>
         </thead>
         <tbody>
-          <PipelineTableRow />
-          <PipelineTableRow />
-          <PipelineTableRow />
-          <PipelineTableRow />
-          <PipelineTableRow />
+          <tr>
+            <td>{inputFields}</td>
+            <td>{inputFields}</td>
+            <td>{selectFields}</td>
+            <td>{updateBtn}</td>
+            <td>{deleteBtn}</td>
+          </tr>
         </tbody>
       </table>
-      {/* Stage Table */}
-      <div className="col-12 col-lg-6">
-        <PipelineTableStage />
-        <PipelineTableStageData />
-        <PipelineTableStageData />
-        <PipelineTableStageData />
-        <PipelineTableStageData />
-      </div>
-    </PipelineTableRowDiv>
+    </div>
   );
 };
 

@@ -1,5 +1,9 @@
 import React from "react";
-import TagBtn from "./TagBtn";
+import TagBtn from "../../HelperComponents/TagBtn";
+
+
+const btnArr = ['United States', 'Small cap', 'Phase3', 'PFIC', 'Biliary atresia', 'Alagille syndrome']
+
 
 const TagChain = () => {
   return (
@@ -15,7 +19,9 @@ const TagChain = () => {
           <option value="3">Three</option>
         </select>
         <div className="">
-          <TagBtn />
+          {btnArr.map((btn, i) => (
+            <TagBtn btnName={btn} key={i} />
+          ))}
         </div>
       </div>
     </div>
