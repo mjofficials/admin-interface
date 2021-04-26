@@ -5,7 +5,7 @@ const Tags = () => {
   return (
     <div>
       <TagChain />
-      <div className="input-group mb-3">
+      <div className="input-group my-3">
         <label className="input-group-text" htmlFor="inputGroupSelect01">
           Add Tag
         </label>

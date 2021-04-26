@@ -5,7 +5,7 @@ import Pipeline from "./Pipeline/Pipeline";
 import Tags from "./Tags/Tags";
 
 const StockFormBody = styled.div`
-  padding: 2rem 3rem;
+  padding: 2rem 1.5rem;
   @media (min-width: 768px) {
     padding: 2rem 4rem;
   }
@@ -13,8 +13,8 @@ const StockFormBody = styled.div`
 
 const AddStocksPage = () => {
   return (
-    <div>
-      <div className="p-3">
+    <StockFormBody>
+      <div>
         <h1>Add Stocks Page</h1>
       </div>
       {/* Cards with tabs component */}
@@ -44,24 +44,24 @@ const AddStocksPage = () => {
         <div className="tab-content">
           {/*Content of Basic info */}
           <div id="tab-top-1" className="card tab-pane active show">
-            <StockFormBody className="card-body">
+            <div className="card-body">
               <h1 className="mb-3">Add/Edit stock</h1>
               <BasicInfo />
-            </StockFormBody>
+            </div>
           </div>
           {/*Content of Pipeline*/}
           <div id="tab-top-2" className="card tab-pane">
-            <StockFormBody className="card-body">
+            <div className="card-body">
               <h1 className="mb-3">Pipeline</h1>
               <Pipeline />
-            </StockFormBody>
+            </div>
           </div>
           {/*Content of Tags*/}
           <div id="tab-top-3" className="card tab-pane">
-            <StockFormBody className="card-body">
+            <div className="card-body">
               <h1 className="mb-3">Tags</h1>
               <Tags />
-            </StockFormBody>
+            </div>
           </div>
           {/*Content of card #4*/}
           <div id="tab-top-4" className="card tab-pane">
@@ -76,7 +76,7 @@ const AddStocksPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </StockFormBody>
   );
 };
 

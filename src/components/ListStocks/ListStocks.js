@@ -4,7 +4,7 @@ import DynamicBtn from "../HelperComponents/DynamicBtn/DynamicBtn";
 import ListStockTable from "./ListStockTable";
 
 const ListStockBody = styled.div`
-  padding: 2rem 3rem;
+  padding: 2rem 1.5rem;
   @media (min-width: 768px) {
     padding: 2rem 4rem;
   }
