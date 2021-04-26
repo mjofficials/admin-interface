@@ -6,12 +6,14 @@ import ListPosts from "./components/ListPosts/ListPosts";
 import ListUsers from "./components/ListUsers/ListUsers";
 import Navbar from "./components/Navbar/Navbar";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+// import NewNav from "./components/NewNav/NewNav";
 
 const App = () => {
   return (
     <div>
       <Router>
         <Navbar />
+        {/* <NewNav /> */}
         <Switch>
           <Route exact path="/" component={Homepage}></Route>
           <Route exact path="/addstocks" component={AddStocksPage}></Route>

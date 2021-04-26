@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "../../assets/admin-logo.png";
 
-
 const NavBtn = styled(Link)`
   width: 8rem;
   margin: 0.2rem;
@@ -38,7 +37,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse container navbar-collapse justify-content-end"
+            className="collapse container-fluid navbar-collapse justify-content-end"
             id="navbarNavDropdown"
           >
             <NavUl className="navbar-nav">

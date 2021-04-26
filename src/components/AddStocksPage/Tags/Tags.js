@@ -50,7 +50,7 @@ const Tags = () => {
         <input
           type="text"
           className="form-control"
-          placeholder=""
+          placeholder="Add Tags"
           aria-label=""
           aria-describedby=""
           value={value}
